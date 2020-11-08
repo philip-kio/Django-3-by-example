@@ -111,7 +111,7 @@ def post_details(request,year,month,day,post):
             #save the comment to the database 
             new_comment.save()
     else:
-        comment_form =CommentForm()
+        comment_form = CommentForm()
 
     return render(request,'blog/post/detail.html',
     {'post':post,
